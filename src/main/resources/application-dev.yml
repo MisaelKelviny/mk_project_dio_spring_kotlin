@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:dw2024
+    username: sdw2024
+    password:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
+
+springdoc:
+  api-docs:
+    title: Users API
+    description: testing users api
+    version: OPENAPI_3_1
